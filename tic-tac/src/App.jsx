@@ -40,6 +40,12 @@ function App() {
 			setWinner(false);
 		}
 	};
+
+	const resetGame = () => {
+		setWinner(null);
+		setBoard(Array(9).fill(null));
+		setTurn(TURNS.X);
+	};
 	return (
 		<main className='board'>
 			<h1>Tic tac toe</h1>
